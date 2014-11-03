@@ -7,4 +7,5 @@ This way, a client only has to remember one password: the password for the passw
 =========================================================================================================
 Currently this is still a work under progress. We want to add usefull features like cloud syncronization as wwll as some form of encription.
 The application currently stores the data in a SQLite file in the \Documents\CloudSafe in a simple unencripted file.
-The application also provides a UI for display and manipulation of cards. 
+The application also provides a UI for display and manipulation of cards.
+Also we have established a server client based syncronization where the server address can be changed in algo/ClientSync.java
