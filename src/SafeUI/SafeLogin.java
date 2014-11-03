@@ -20,7 +20,6 @@ import javax.swing.SwingConstants;
 import javax.swing.UIManager;
 import javax.swing.border.MatteBorder;
 
-import Algo.AESEncrypter;
 import Algo.Hashing;
 import Algo.dbAction;
 
@@ -124,15 +123,6 @@ public class SafeLogin extends JFrame implements ActionListener{
 				if (result == JOptionPane.YES_OPTION) 
 				{
 
-					AESEncrypter aes;
-					try {
-						aes = new AESEncrypter();
-
-						aes.encrypt();
-					} catch (Exception e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
 					System.exit(0);
 				}
 			}
@@ -231,9 +221,6 @@ public class SafeLogin extends JFrame implements ActionListener{
 		dbAction db=new dbAction();
 		if(db.load()==true)
 		{
-			System.out.print("asdasda");
-			AESEncrypter aes = new AESEncrypter();
-			aes.decrypt();
 			new SafeLogin();
 		}
 		else

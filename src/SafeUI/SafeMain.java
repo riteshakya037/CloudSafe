@@ -62,7 +62,6 @@ import javax.swing.event.ListSelectionListener;
 
 import org.eclipse.wb.swing.FocusTraversalOnArray;
 
-import Algo.AESEncrypter;
 import Algo.ClientSync;
 import Algo.PassGenerate;
 import Algo.Prefs;
@@ -691,14 +690,6 @@ public class SafeMain extends JFrame implements ActionListener, ListSelectionLis
 					e.printStackTrace();
 				}
 				new ClientSync(user,pass,"true");
-			}
-			AESEncrypter aes;
-			try {
-				aes = new AESEncrypter();
-				aes.encrypt();
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
 			}
 			System.exit(0);
 		}
